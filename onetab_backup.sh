@@ -1,5 +1,18 @@
 #!/bin/sh
 
+#   onetab_backup.sh - back up Onetab data for Firefox on Linux
+#   Copyright (C) 2018  Patrick Gray
+
+#   This program is free software; you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation; either version 2 of the License, or
+#   (at your option) any later version.
+
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+
 fname="/home/$(whoami)/.mozilla/firefox/$(ls ~/.mozilla/firefox | grep '\.default')/browser-extension-data/extension@one-tab.com/storage.js"
 
 save_dir="/home/$(whoami)/Documents/onetabs/" # modify this directory as you please
